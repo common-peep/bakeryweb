@@ -30,6 +30,7 @@ $totalVouchers = $pdo->query("SELECT COUNT(*) FROM vouchers")->fetchColumn();
   <h1>Dashboard Admin</h1>
   <div class="nav">
     <a href="dashboard.php">Dashboard</a>
+    <a href="orders.php">Orders</a>
     <a href="categories.php">Kategori</a>
     <a href="products.php">Produk</a>
     <a href="outlets.php">Outlet</a>
