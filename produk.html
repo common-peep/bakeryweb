@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jessyco Bakery | Produk</title>
+  <link rel="stylesheet" href="productstyles.css">
+</head>
+<body>
+  <div class="welcomebar">
+    <h1>Selamat Datang di Jessyco Bakery</h1>
+    <ul class="login" id="login">
+      <li><a href="#">💳Daftar</a></li>
+      <li><a href="#">🔑Masuk</a></li>
+    </ul>
+  </div>
+  
+
+  <div class="main-container">
+      <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="logo.png" alt="Jessyco Logo">
+      </div>
+      <ul class="menu">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="produk.html" class="active">Produk</a></li>
+        <li>
+          <a href="keranjang.html">Keranjang
+            <span id="cart-badge" class="cart-badge">0</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+      <!-- Hero Banner -->
+    <section class="product-hero">
+      <h1>Semua Produk</h1>
+      <p>Pilih dan pesan produk favoritmu langsung dari sini</p>
+    </section>
+
+    <div class="category-filter">
+      <button class="filter-btn active" data-category="all">Semua</button>
+      <button class="filter-btn" data-category="chiffon">Chiffon</button>
+      <button class="filter-btn" data-category="tart">Tart</button>
+      <button class="filter-btn" data-category="mini-bread">Mini Bread</button>
+      <button class="filter-btn" data-category="pudding">Pudding</button>
+      <button class="filter-btn" data-category="pastry">Pastry</button>
+      <button class="filter-btn" data-category="cookies">Cookies</button>
+      <button class="filter-btn" data-category="snack-box">Snack Box</button>
+      <button class="filter-btn" data-category="roti-besar">Roti Besar</button>
+      <button class="filter-btn" data-category="normal-bread">Normal Bread</button>
+      <button class="filter-btn" data-category="jajan-pasar">Jajan Pasar</button>
+      <button class="filter-btn" data-category="roti-tawar">Roti Tawar</button>
+      <button class="filter-btn" data-category="nasi-box">Nasi Box</button>
+    </div>
+
+    <!-- Grid Produk -->
+<section class="product-grid">
+    <!-- Contoh produk -->
+    <div class="product-card" data-category="chiffon">
+      <img src="img/chiffon.jpg" alt="Chiffon">
+      <h3>Chiffon Cake</h3>
+      <p>Tekstur lembut, rasa premium</p>
+      <p class="price">Rp50.000</p>
+      <button class="add-cart-btn" data-name="Chiffon Cake" data-price="50000" data-img="img/chiffon.jpg">+ Keranjang</button>
+    </div>
+
+    <div class="product-card" data-category="tart">
+      <img src="img/tart.jpg" alt="Tart">
+      <h3>Tart Coklat</h3>
+      <p>Tart istimewa untuk momen spesial</p>
+      <p class="price">Rp120.000</p>
+      <button class="add-cart-btn" data-name="Tart Coklat" data-price="120000" data-img="img/tart.jpg">+ Keranjang</button>
+    </div>
+
+    <div class="product-card" data-category="cookies">
+      <img src="img/cookies.jpg" alt="Cookies">
+      <h3>Cookies Butter</h3>
+      <p>Renyaaan dan wangi butter asli</p>
+      <p class="price">Rp35.000</p>
+      <button class="add-cart-btn" data-name="Cookies Butter" data-price="35000" data-img="img/cookies.jpg">+ Keranjang</button>
+    </div>
+  </section>
+
+  
+  </div>
+      <!-- Floating Cart Bar -->
+  <div id="floating-cart">
+     <span id="floating-info">0 item | Rp0</span>
+     <button id="view-cart-btn">Cek Keranjang</button>
+  </div>
+
+
+  <script src="product.js"></script>
+</body>
+</html>

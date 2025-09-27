@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jessyco Bakery | Toko Roti No.1 di Semarang</title>
+  <meta name="description" content="Jessyco Bakery menjual roti, kue, tart, dan snack segar. Dapatkan promo menarik dan kesempatan memenangkan hadiah motor baru.">
+  <meta property="og:title" content="Jessyco Bakery | Roti & Kue Segar">
+  <meta property="og:description" content="Beli roti bisa menang motor baru! Cek promo terbaru di Jessyco Bakery.">
+  <meta property="og:image" content="https://jessycobakery.com/img/logo.png">
+  <link rel="stylesheet" href="indexstyles.css">
+  <script src="index.js" defer></script>
+</head>
+<body>
+    <!-- welomce dan login -->
+  <div class="welcomebar">
+    <h1>Selamat Datang di Jessyco Bakery</h1>
+    <ul class="login" id="login">
+      <li><a href="#">💳Daftar</a></li>
+      <li><a href="#">🔑Masuk</a></li>
+    </ul>
+  </div>
+
+  <!-- Navbar -->
+  <div class="main-container">
+      <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo"><img src="logo.png" alt="Logo Jessyco Bakery"></div>
+    <button class="navitoggle" onclick="toggleMenu()">☰</button>
+    <ul class="menu" id="menu">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="#">Promo</a></li>
+      <li><a href="produk.html">Produk</a></li>
+      <li><a href="#">Kontak</a></li>
+      <li><a href="#">Karir</a></li>
+    </ul>
+  </nav>
+      <!-- Hero Section -->
+      <section class="hero">
+        
+      <!-- Background overlay -->
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+        <!-- Teks Hero -->
+            <div class="herotexts">
+                <h1 class="judulhero">Beli Roti Bisa Menang Motor Baru!</h1>
+                <p class="deskripsihero">
+                Dapatkan kupon undian berhadiah Sepeda Motor Honda Beat,<br>
+                TV, Smartphone, dan masih banyak lainnya
+                </p>
+          <button class="steam-button">Dapatkan Kupon</button>
+        </div>
+
+        <!-- Video Lokal -->
+        <div class="heromedia">
+          <video class="hero-video" autoplay muted loop playsinline poster="herobg.png" aria-hidden="true">
+            <source src="hero video.mp4" type="video/mp4">
+            Browser kamu tidak mendukung video.
+          </video>
+        </div>
+      </div>
+      </section>
+          <!--
+          <div class="heromedia">
+            <blockquote class="instagram-media"
+              data-instgrm-permalink="https://www.instagram.com/reel/DOp31PXEgkK/?igsh=MTlpdTNzMHVnY2tjbw=="
+              data-instgrm-version="14"
+              style="max-width: 540px; min-width: 325px; margin:auto;">
+            </blockquote>
+            <script async src="//www.instagram.com/embed.js"></script>
+          </div>
+      -->
+      
+      </section>
+
+        <!-- Slider Versi 2: Blur + Pink Glow -->
+        <section class="slider-section">
+        <div class="slider-wrapper">
+          <h2 class="slider-title">Promo & Program</h2>
+
+          <div class="slider-container">
+            <div class="slider">
+              <div class="slide">
+                <img src="slide1.png" alt="Kelebihan">
+                <div class="slide-text">
+                  <h2>Kelebihan</h2>
+                  <p>Deskripsi kelebihan produk</p>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="slide2.png" alt="Promo">
+                <div class="slide-text">
+                  <h2>Promo</h2>
+                  <p>Deskripsi promo terbaru</p>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="slide3.png" alt="Produk Baru">
+                <div class="slide-text">
+                  <h2>Produk Baru</h2>
+                  <p>Deskripsi produk terbaru</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tombol navigasi -->
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+
+            <!-- Thumbnails -->
+            <div class="thumbnails">
+              <img class="thumb active" src="slide1.png" alt="">
+              <img class="thumb" src="slide2.png" alt="">
+              <img class="thumb" src="slide3.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="category-section">
+        <h2>Segala Produk Untuk Kebutuhan Konsumsi Acara Anda</h2>
+        
+        <!-- Carousel Kategori -->
+        <div class="category-carousel">
+          <button class="cat-prev">&#10094;</button>
+          <div class="category-track">
+            <div class="category-card" data-category="chiffon">
+              <img src="img/chiffon.jpg" alt="Chiffon">
+              <p>Chiffon</p>
+            </div>
+            <div class="category-card" data-category="tart">
+              <img src="img/tart.jpg" alt="Tart">
+              <p>Tart</p>
+            </div>
+            <div class="category-card" data-category="mini-bread">
+              <img src="img/mini-bread.jpg" alt="Mini Bread">
+              <p>Mini Bread</p>
+            </div>
+            <div class="category-card" data-category="pudding">
+              <img src="img/pudding.jpg" alt="Pudding">
+              <p>Pudding</p>
+            </div>
+            <div class="category-card" data-category="pastry">
+              <img src="img/pastry.jpg" alt="Pastry">
+              <p>Pastry</p>
+            </div>
+            <div class="category-card" data-category="cookies">
+              <img src="img/cookies.jpg" alt="Cookies">
+              <p>Cookies</p>
+            </div>
+            <div class="category-card" data-category="snack-box">
+              <img src="img/snack-box.jpg" alt="Snack Box">
+              <p>Snack Box</p>
+            </div>
+            <div class="category-card" data-category="roti-besar">
+              <img src="img/roti-besar.jpg" alt="Roti Besar">
+              <p>Roti Besar</p>
+            </div>
+            <div class="category-card" data-category="normal-bread">
+              <img src="img/normal-bread.jpg" alt="Normal Bread">
+              <p>Normal Bread</p>
+            </div>
+            <div class="category-card" data-category="jajan-pasar">
+              <img src="img/jajan-pasar.jpg" alt="Jajan Pasar">
+              <p>Jajan Pasar</p>
+            </div>
+            <div class="category-card" data-category="roti-tawar">
+              <img src="img/roti-tawar.jpg" alt="Roti Tawar">
+              <p>Roti Tawar</p>
+            </div>
+            <div class="category-card" data-category="nasi-box">
+              <img src="img/nasi-box.jpg" alt="Nasi Box">
+              <p>Nasi Box</p>
+            </div>
+          </div>
+          <button class="cat-next">&#10095;</button>
+        </div>
+
+        <!-- Produk Preview -->
+        <div class="category-products">
+          <h3 id="category-title">Pilih kategori di atas</h3>
+          <div class="product-grid" id="product-list"></div>
+          <a href="#" class="more-btn" id="see-more" style="display:none;">Lihat Selengkapnya</a>
+        </div>
+      </section>
+
+<!-- ===== BEST SELLER SECTION ===== -->
+      <section class="best-seller-section main-container">
+        <h2 class="section-title">✨ Best Seller Kami ✨</h2>
+
+        <div class="best-seller-grid">
+          <!-- Produk 1 -->
+          <div class="best-seller-card">
+            <img src="img/chiffon1.jpg" alt="Chiffon Coklat">
+            <h3>Chiffon Coklat</h3>
+            <p>Lembut & ringan dengan aroma coklat yang menggoda.</p>
+            <a href="https://wa.me/6281333068788?text=Halo%20Jessyco!%20Saya%20ingin%20memesan%20Chiffon%20Coklat"
+              target="_blank" class="order-btn">Pesan Sekarang</a>
+          </div>
+
+          <!-- Produk 2 -->
+          <div class="best-seller-card">
+            <img src="img/tart1.jpg" alt="Tart Opera">
+            <h3>Tart Opera</h3>
+            <p>Lapisan sponge lembut dengan krim dan coklat premium.</p>
+            <a href="https://wa.me/6281333068788?text=Halo%20Jessyco!%20Saya%20ingin%20memesan%20Tart%20Opera"
+              target="_blank" class="order-btn">Pesan Sekarang</a>
+          </div>
+
+          <!-- Produk 3 -->
+          <div class="best-seller-card">
+            <img src="img/mini1.jpg" alt="Mini Croissant">
+            <h3>Mini Croissant</h3>
+            <p>Croissant renyah berlapis mentega wangi.</p>
+            <a href="https://wa.me/6281333068788?text=Halo%20Jessyco!%20Saya%20ingin%20memesan%20Mini%20Croissant"
+              target="_blank" class="order-btn">Pesan Sekarang</a>
+          </div>
+
+          <!-- Produk 4 -->
+          <div class="best-seller-card">
+            <img src="img/pudding1.jpg" alt="Pudding Coklat">
+            <h3>Pudding Coklat</h3>
+            <p>Pudding lembut dengan coklat creamy yang manis pas.</p>
+            <a href="https://wa.me/6281333068788?text=Halo%20Jessyco!%20Saya%20ingin%20memesan%20Pudding%20Coklat"
+              target="_blank" class="order-btn">Pesan Sekarang</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== TENTANG KAMI & OUTLET ===== -->
+      <section class="about-outlet-section main-container">
+        <h2 class="section-title">Tentang Kami</h2>
+        <div class="about-text">
+          <h3>Jessyco Bakery</h3>
+          <p>
+            Berdiri sejak 2022, <strong>Jessyco Bakery</strong> menghadirkan berbagai pilihan roti, kue, 
+            dan pastry dengan bahan berkualitas tinggi dan tanpa bahan pengawet.
+          </p>
+          <p>
+            Kami berkomitmen memberikan rasa terbaik dengan harga terjangkau. Dengan outlet yang terus 
+            berkembang, kami ingin selalu dekat dengan pelanggan setia.
+          </p>
+        </div>
+
+        <h2 class="section-title">📍 Outlet Kami</h2>
+        <div class="outlet-grid">
+          <div class="outlet-card">
+            <h3>JessyCo Bakery - Citragrand</h3>
+            <p>Jl. Merdeka No. 123, Jakarta</p>
+            <a href="https://goo.gl/maps/xxxx" target="_blank" class="map-btn">Lihat di Maps</a>
+          </div>
+
+          <div class="outlet-card">
+            <h3>JessyCo Bakery - Lamper Tengah</h3>
+            <p>Jl. Sudirman No. 45, Jakarta</p>
+            <a href="https://goo.gl/maps/xxxx" target="_blank" class="map-btn">Lihat di Maps</a>
+          </div>
+
+          <div class="outlet-card">
+            <h3>JessyCo Bakery - Simongan</h3>
+            <p>Jl. Asia Afrika No. 67, Bandung</p>
+            <a href="https://goo.gl/maps/xxxx" target="_blank" class="map-btn">Lihat di Maps</a>
+          </div>
+
+          <div class="outlet-card">
+            <h3>JessyCo Bakery - Gunungpati</h3>
+            <p>Jl. Tunjungan No. 89, Surabaya</p>
+            <a href="https://goo.gl/maps/xxxx" target="_blank" class="map-btn">Lihat di Maps</a>
+          </div>
+        </div>
+      </section>
+
+
+
+
+  </div>
+    <!-- Mascot di pojok body -->
+  <div class="mascot-corner">
+    <img src="img/mascot2.png" alt="Mascot JessyCo Pose 2">
+  </div>  
+
+
+</body>
+</html>

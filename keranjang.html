@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keranjang Saya</title>
+  <link rel="stylesheet" href="cartstyles.css">
+</head>
+<body>
+  <div class="main-container">
+
+    <nav class="navbar">
+      <div class="logo"><img src="logo.png" alt="Logo"></div>
+      <ul class="menu">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="produk.html">Kembali</a></li>
+      </ul>
+    </nav>
+
+    <section class="order-form">
+      <h2>📝 Detail Pemesanan</h2>
+
+      <div class="form-field">
+        <label for="customer-name">Nama Pemesan *</label>
+        <input type="text" id="customer-name" required>
+      </div>
+
+      <div class="delivery-method">
+        <label><input type="radio" name="method" value="outlet"> Ambil di Outlet</label>
+        <label><input type="radio" name="method" value="delivery"> Kirim ke Alamat</label>
+      </div>
+
+      <div class="form-field" id="outlet-wrapper" style="display:none;">
+        <label for="outlet-dropdown">Pilih Outlet:</label>
+        <select id="outlet-dropdown">
+          <option value="">-- Pilih Outlet --</option>
+        </select>
+      </div>
+
+      <div class="form-field" id="address-input" style="display:none;">
+        <label for="delivery-address">Alamat Pengiriman</label>
+        <textarea id="delivery-address" rows="3"></textarea>
+      </div>
+
+      <div class="form-field">
+        <label for="delivery-date">Tanggal Pengiriman * - Minimal H+2</label>
+        <input type="date" id="delivery-date" required>
+      </div>
+
+      <div class="form-field">
+        <label for="delivery-time">Jam Pengiriman * 07.00 sd 16.00</label>
+        <input type="time" id="delivery-time" required>
+      </div>
+    </section>
+
+
+    <section class="cart-section">
+      <h1>🛒 Keranjang Saya</h1>
+      <div id="cart-items"></div>
+        <div class="voucher-section">
+        <label>🎟 Kode Voucher</label>
+        <input type="text" id="voucher-code" placeholder="Masukkan kode">
+        <button id="apply-voucher">Gunakan</button>
+        <p id="voucher-msg"></p>
+      </div>
+      <div class="cart-total">
+        <h2>Total: Rp<span id="original-price">0</span></h2>
+        <p id="discount-info" style="display:none; color:#ffb6f9; margin:5px 0;"></p>
+        <h2>Grand Total: Rp<span id="total-price">0</span></h2>
+        <button id="checkout-btn">Checkout</button>
+      </div>
+
+
+    </section>
+  </div>
+
+  <script src="cart.js"></script>
+</body>
+</html>
